@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Dedey Digital test</title> 
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+    <div class="main-wrapper">        
+        <section class="main">            
+            <form action="POST" class="form">
+                <div class="form__item">
+                    <p class="form__item-descr">Место или название отеля</p>
+                    <input type="text" class="form__item-input" id="input-place" placeholder="Введите здесь место" tabindex="1">
+                </div>
+                <div class="form__item">
+                    <p class="form__item-descr "><span>Заезд</span><span>Выезд</span></p>
+                    <div class="form__item-select__wrapper">
+                        <label for="input-date" id="date__label"></label>
+                        <select  class="form__item-select" id="input-date" tabindex="0">
+                            <option >07 февраля 22 февраля</option>
+                            <option >08 февраля 23 февраля</option>
+                            <option >09 февраля 24 февраля</option>
+                        </select>
+                    </div>                    
+                </div>                
+                <div class="form__item">
+                    <p class="form__item-descr">Номера</p>
+                    <div class="form__item-input__container">
+                        <input type="text" class="form__item-input__number" maxlength="1" data-min="1" data-max="9" tabindex="2">
+                        <div class="form__item-btn__wrapper">
+                            <a href="#" class="form__item-btn__more active"></a>
+                            <a href="#" class="form__item-btn__less"></a>
+                        </div>                            
+                    </div>                        
+                </div>
+                <div class="form__item">
+                    <p class="form__item-descr">Взрослые</p>
+                    <div class="form__item-input__container">
+                        <input type="text" class="form__item-input__number" maxlength="1" data-min="1" data-max="9" tabindex="3">
+                        <div class="form__item-btn__wrapper">
+                            <a href="#" class="form__item-btn__more active"></a>
+                            <a href="#" class="form__item-btn__less"></a>
+                        </div> 
+                    </div>                        
+                </div>
+                <div class="form__item">
+                    <p class="form__item-descr">Дети</p>
+                    <div class="form__item-input__container">
+                        <input type="text" class="form__item-input__number" maxlength="1" data-min="0" data-max="9" tabindex="4">
+                        <div class="form__item-btn__wrapper">
+                            <a href="#" class="form__item-btn__more active"></a>
+                            <a href="#" class="form__item-btn__less"></a>
+                        </div> 
+                    </div>                        
+                </div>
+                <div class="form__item">
+                    <a href="#" class="form__item-plus" tabindex="5">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="form__item">
+                    <a href="#" class="form__item-find" tabindex="6">Найти</a>
+                </div>
+            </form>
+        </section>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" defer></script>
+   <script src="js/select2.min.js" defer></script>
+   <script src="js/common.js" defer></script>
+</body>
+</html>
